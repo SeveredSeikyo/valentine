@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/valentine-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/vcard.css">
+    <title>valentine</title>
+</head>
+<body class="bg-body">
+    <h1 style="color: white;">To my special little lady 💕</h1>
+    <div>
+        <div class="letter">
+            <div class="back-card">
+                <div class="inner-card">
+                    💌 "Roses are red, violets are blue,
+                    this Valentine’s Day won’t be special...
+                    unless I spend it with you. 💕
+                    Will you be my Valentine?"
+                </div>
+                <div class="front-card">
+                    <h1>Open Me &#128541;</h1>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="buttons">
+        <a href="./final.html"><button>Yes</button></a>
+        <button id="noButton">No</button>
+    </div>
+
+    <script>
+        const noButton = document.getElementById("noButton");
+
+        noButton.addEventListener("mouseover", function() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 100);
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>
